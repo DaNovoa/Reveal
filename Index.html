@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Presentación</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="dist/theme/moon.css"> <!-- Ajusta el tema según tu elección -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Diapositiva 1 -->
+            <section class="slide-1">
+                <section>
+                    <h1>Introducción a los Patrones de Diseño</h1>
+                </section>
+                <section>
+                    <ul>
+                        <li>Breve introducción a la importancia de los patrones de diseño en el desarrollo de software.
+                        </li>
+                        <li>Explicación de cómo los patrones de diseño ayudan a resolver problemas comunes de diseño de
+                            software.</li>
+                        <li>Destacar la reutilización de soluciones probadas y la estandarización del desarrollo.</li>
+                    </ul>
+                    <img src="images/1.png" alt="Imagen de Patrones de Diseño" class="centered-image zoom">
+                </section>
+            </section>
+
+            <!-- Diapositiva 2 -->
+            <section class="slide-2">
+                <section>
+                    <h1>Introducción a los Patrones de Diseño</h1>
+                </section>
+                <section>
+                    <p>Los patrones de diseño son soluciones probadas y reutilizables para problemas comunes de diseño
+                        de software.</p>
+                    <h2>Utilidad en la resolución de problemas:</h2>
+                    <ul>
+                        <li>Ofrecen soluciones eficaces para desafíos de diseño.</li>
+                        <li>Promueven la reutilización de soluciones probadas.</li>
+                        <li>Facilitan la estandarización y mantenibilidad del código.</li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="images/2.jpg" alt="Patrones de Diseño" class="centered-image fade-in">
+                </section>
+            </section>
+
+            <!-- Diapositiva 3 -->
+            <section class="slide-3">
+                <section>
+                    <h1>Categorías de Patrones de Diseño</h1>
+                    <ol>
+                        <li>Patrones Creacionales</li>
+                        <li>Patrones Estructurales</li>
+                        <li>Patrones de Comportamiento</li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>Patrones Creacionales</h2>
+                    <p>Estos patrones se centran en cómo se crean objetos. Proporcionan formas flexibles y reutilizables
+                        de crear objetos sin especificar sus clases concretas.</p>
+                </section>
+                <section>
+                    <h2>Patrones Estructurales</h2>
+                    <p>Los patrones estructurales se centran en cómo los objetos y las clases se combinan para formar
+                        estructuras más grandes. Estos patrones se utilizan para construir sistemas de objetos más
+                        grandes y proporcionar flexibilidad en la composición de objetos.</p>
+                </section>
+                <section>
+                    <h2>Patrones de Comportamiento</h2>
+                    <p>Los patrones de comportamiento se centran en la comunicación entre objetos y cómo se distribuye
+                        la responsabilidad entre ellos. Estos patrones ayudan a definir cómo los objetos interactúan y
+                        colaboran para completar tareas.</p>
+                </section>
+            </section>
+
+            <!-- Diapositiva 4 -->
+            <section class="slide-4">
+                <section>
+                    <h1>Patrón Creacional - Singleton</h1>
+                </section>
+                <section class="subslide4">
+                    <h1>Singleton</h1>
+                    <p>El patrón Singleton es un patrón de diseño creacional que se utiliza para garantizar que una
+                        clase tenga una única instancia y proporcionar un punto de acceso global a esa instancia. Su
+                        objetivo principal es restringir la creación de objetos de una clase a una sola instancia, lo
+                        que es útil en situaciones donde necesitas tener un único punto de control para una determinada
+                        funcionalidad o recurso.</p>
+                </section>
+                <section>
+                    <h2>Características clave del patrón Singleton:</h2>
+                    <ul><small>
+                            <li>Una única instancia: Garantiza que solo exista una instancia de la clase Singleton en
+                                todo el programa.</li>
+                            <li>Acceso global: Proporciona un método estático (a menudo llamado
+                                <code>getInstance()</code>) que permite acceder a la instancia única desde cualquier
+                                parte del código.
+                            </li>
+                            <li>Lazy initialization: La instancia se crea solo cuando se solicita por primera vez, en
+                                lugar de en el momento de la carga de la clase.</li>
+                            <li>Control sobre la instancia: Puede haber una lógica adicional para garantizar que la
+                                instancia sea creada de manera segura y controlada.</li>
+                            <li>Thread-safety: A menudo se implementa con consideraciones de concurrencia para
+                                garantizar que la instancia única sea segura para usar en entornos multiproceso.</li>
+                        </small>
+                    </ul>
+                </section>
+                <section>
+                    <img src="images/99.png" alt="Imagen singleton" class="centered-image zoom">
+                </section>
+            </section>
+
+            <!-- Diapositiva 5 -->
+            <section class="slide-5">
+                <section>
+                    <h1>Patrón Creacional - Factory Method</h1>
+                </section>
+                <section>
+                    <h1>Factory Method</h1>
+                    <p><small>El patrón Factory Method es un patrón de diseño creacional que se utiliza para crear
+                            objetos sin especificar la clase concreta del objeto que se creará. En lugar de crear
+                            objetos
+                            directamente utilizando un constructor, el Factory Method define una interfaz para crear
+                            objetos, pero
+                            delega la decisión de qué clase concreta crear a las subclases o implementaciones concretas.
+                            Esto
+                            permite que una clase delegue la responsabilidad de instanciar objetos a sus subclases, lo
+                            que promueve la flexibilidad y la extensibilidad del código.</small></p>
+                </section>
+                <section>
+                    <img src="images/factory.png" alt="Imagen Factory" class="centered-image zoom">
+                </section>
+            </section>
+
+            <!-- Diapositiva 6 -->
+            <section class="slide-6">
+                <section>
+                    <h1>Patrónes Estructurales</h1>
+                </section>
+                <section class="subslide3">
+                    <h2>Adapter (Adaptador): </h2>
+                    <p>El patrón Adapter es un patrón de diseño estructural que se utiliza para permitir que interfaces
+                        incompatibles o no coincidentes trabajen juntas. Su objetivo principal es actuar como un puente
+                        entre dos interfaces que no pueden trabajar directamente entre sí debido a diferencias en su
+                        estructura o funcionalidad.</p>
+                </section>
+                <section>
+                    <img src="images/adapter.png" alt="Imagen Factory" class="centered-image zoom">
+                </section>
+                <section class="subslide1">
+                    <h1>Bridge (Puente)</h1>
+                    <p>Divide una abstracción de su implementación, de modo que ambas puedan variar de manera
+                        independiente.</p>
+                </section>
+                <section class="subslide2">
+                    <h1>Composite (Compuesto) </h1>
+                    <p>Permite que los objetos se compongan en estructuras de árbol para representar jerarquías
+                        parte-todo. Los clientes pueden tratar tanto a los objetos individuales como a las composiciones
+                        de manera uniforme.</p>
+                </section>
+                <section class="subslide1">
+                    <h1>Decorator (Decorador)</h1>
+                    <p>Agrega funcionalidad adicional a los objetos dinámicamente. Proporciona una forma flexible de
+                        extender las capacidades de las clases.</p>
+                </section>
+                <section class="subslide2">
+                    <h1>Facade (Fachada)</h1>
+                    <p>Proporciona una interfaz unificada para un conjunto de interfaces en un subsistema. Simplifica la
+                        interacción del cliente con el sistema.</p>
+                </section>
+                <section class="subslide1">
+                    <h1>Flyweight (Peso Ligero) </h1>
+                    <p>Minimiza el uso de la memoria o el almacenamiento compartiendo tanto como sea posible con objetos
+                        relacionados. Útil cuando se trabaja con grandes cantidades de objetos similares.</p>
+                </section>
+                <section class="subslide2">
+                    <h1>Proxy (Proxy)</h1>
+                    <p>Proporciona un sustituto o representante de otro objeto para controlar el acceso a él. Útil para
+                        la creación de objetos costosos bajo demanda o para agregar una capa de control.</p>
+                </section>
+
+
+            </section>
+
+            <!-- Diapositiva 7 -->
+            <section class="slide-7">
+                <section>
+                    <h1>Patrónes Estructurales </h1>
+                </section>
+                <section class="subslide1">
+                    <h2>Composite </h2>
+                    <p>El patrón Composite es un patrón de diseño estructural que se utiliza para tratar objetos
+                        individuales y composiciones de objetos de la misma manera. Su objetivo principal es componer
+                        objetos en estructuras de árbol para representar jerarquías de objetos "todo-parte" o
+                        estructuras anidadas. Esto permite que los clientes traten tanto a objetos individuales como a
+                        composiciones de objetos de manera uniforme, lo que simplifica el código y proporciona
+                        flexibilidad en la manipulación de estructuras complejas.</p>
+                </section>
+                <section>
+                    <img src="images/compositer.jpg" alt="Imagen Factory" class="centered-image zoom">
+                </section>
+            </section>
+
+            <!-- Diapositiva 8 -->
+            <section class="slide-8">
+                <section>
+                    <h1>Patrónes de Comportamiento </h1>
+                </section>
+                <section class="subslide2">
+                    <h2>Observer</h2>
+                    <p>El patrón Observer es un patrón de diseño de comportamiento que se utiliza para definir una
+                        relación de uno a muchos entre objetos, de modo que cuando un objeto cambia su estado, todos sus
+                        observadores sean notificados y actualizados automáticamente. Este patrón se basa en el
+                        principio de desacoplar el sujeto (objeto que es observado) de sus observadores, lo que permite
+                        una mayor modularidad y flexibilidad en el diseño del software.</p>
+                </section>
+                <section>
+                    <img src="images/observer.png" alt="Imagen Factory" class="centered-image zoom">
+                </section>
+            </section>
+
+            <!-- Diapositiva 9 -->
+            <section class="slide-9">
+                <section>
+                    <h1>Patrónes de Comportamiento</h1>
+                </section>
+                <section class="subslide1">
+                    <h2>Strategy</h2>
+                    <p>El patrón Strategy es un patrón de diseño de comportamiento que permite definir una familia de
+                        algoritmos, encapsular cada uno de ellos y hacer que sean intercambiables. Esto significa que el
+                        patrón Strategy permite cambiar el comportamiento de un objeto en tiempo de ejecución sin
+                        alterar su estructura.</p>
+                </section>
+                <section>
+                    <img src="images/strategy.png" alt="Imagen Factory" class="centered-image zoom">
+                </section>                
+                <section class="subslide2">
+                    <h1>Command (Comando) </h1>
+                    <p>Encapsula una solicitud como un objeto, lo que le permite parametrizar clientes con colas,
+                        solicitudes y operaciones. También permite soportar operaciones reversibles.</p>
+                </section>
+                <section class="subslide1">
+                    <h1>State (Estado)</h1>
+                    <p>Permite que un objeto cambie su comportamiento cuando su estado interno cambia. Parece que el
+                        objeto cambia su clase.</p>
+                </section>
+                <section class="subslide2">
+                    <h2>Chain of Responsibility (Cadena de Responsabilidad) </h2>
+                    <p>Pasa las solicitudes a lo largo de una cadena de manejadores. Cada manejador decide si procesa la
+                        solicitud o la pasa al siguiente manejador en la cadena.</p>
+                </section>
+                <section class="subslide1">
+                    <h1>Memento (Recuerdo)</h1>
+                    <p>Captura y externaliza un estado interno de un objeto, lo que permite restaurar el objeto a ese
+                        estado en el futuro.</p>
+                </section>
+                <section class="subslide2">
+                    <h1>Interpreter (Intérprete) </h1>
+                    <p>Define una gramática para un lenguaje y proporciona una interpretación para sentencias en el
+                        lenguaje.</p>
+                </section>
+                <section class="subslide1">
+                    <h1>Visitor (Visitante)</h1>
+                    <p>Representa una operación a realizar en los elementos de una estructura de objetos. Permite
+                        definir una nueva operación sin cambiar las clases de los elementos en los que opera.</p>
+                </section>
+                <section class="subslide2">
+                    <h1>Template Method (Método Plantilla)</h1>
+                    <p>Define el esqueleto de un algoritmo en la superclase pero permite que las subclases sobrescriban
+                        pasos específicos del algoritmo sin cambiar su estructura general.</p>
+                </section>
+
+            </section>
+            <!-- Diapositiva 10 -->
+            <section class="slide-10">
+                <section>
+                    <h1>Conclusión</h1>
+                </section>
+                <section>
+                    <h2>Para Mi:</h2>
+                    <p>Los patrones de diseño son soluciones probadas y reutilizables que abordan problemas comunes de
+                        diseño en el desarrollo de software. Estas herramientas, como Singleton, Factory Method y otros,
+                        mejoran la eficiencia, la mantenibilidad y la escalabilidad del código. Su importancia radica en
+                        la reutilización, estandarización y abstracción de problemas complejos, lo que facilita el
+                        desarrollo de sistemas robustos y adaptables.</p>
+                </section>
+                <section>
+                    <h1>GRACIAS!</h1>
+                    <img src="images/Gracias.jpeg" alt="Imagen Factory" class="centered-image zoom">
+                </section>
+            </section>
+        </div>
+    </div>
+    <<script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            // Otras configuraciones...
+            navigation: {
+                // Debería estar configurado en 'vertical' para el desplazamiento vertical
+                mode: 'vertical',
+            },
+        });
+    </script>
+    
+</body>
+
+</html>
